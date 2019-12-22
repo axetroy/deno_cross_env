@@ -1,6 +1,8 @@
 [![Build Status](https://github.com/axetroy/deno_cross_env/workflows/test/badge.svg)](https://github.com/axetroy/deno_cross_env/actions)
 
-### cross-platform environment variable
+### setting environment variable
+
+> A tool for setting environment variables across platforms
 
 ### Install
 
