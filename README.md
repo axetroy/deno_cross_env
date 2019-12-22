@@ -2,11 +2,15 @@
 
 ### cross-platform environment variable
 
-### Usage
+### Install
 
 ```shell
 $ deno install cross-env https://deno.land/x/cross_env/mod.ts --allow-run --allow-env
+```
 
+### Usage
+
+```shell
 $ cross-env PORT=8080 HOST=0.0.0.0 deno https://example.com/server.ts
 ```
 
