@@ -40,7 +40,7 @@ cross-env - A tool for setting environment variables across platforms
 Usage:
     cross-env --help
     cross-env [key=value] <COMMAND>
-    cross-env PORT=8080 HOST=localhost deno run https://example.com/server.ts
+    cross-env PORT=8080 HOST=localhost deno run server.ts
       `);
 
   exit(1);
