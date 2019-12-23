@@ -7,13 +7,13 @@
 ### Install
 
 ```shell
-$ deno install cross-env https://raw.githubusercontent.com/axetroy/deno_cross_env/master/mod.ts --allow-run --allow-env
+deno install cross-env https://raw.githubusercontent.com/axetroy/deno_cross_env/master/mod.ts --allow-run --allow-env
 ```
 
 ### Usage
 
 ```shell
-$ cross-env PORT=8080 HOST=0.0.0.0 deno https://example.com/server.ts
+cross-env PORT=8080 HOST=0.0.0.0 deno https://example.com/server.ts
 ```
 
 ## License
