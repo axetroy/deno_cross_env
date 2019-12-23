@@ -32,6 +32,23 @@ export function parse(args: string[]): Result {
 }
 
 if (import.meta.main) {
+  // print help message
+  if (
+    args.length === 0 ||
+    (args.length === 1 && ["--help", "-h"].includes(args[0]))
+  ) {
+    console.log(`
+cross-env - A tool for setting environment variables across platforms
+
+Usage:
+    cross-env --help
+    cross-env [key=value] <COMMAND>
+    cross-env PORT=8080 HOST=localhost deno run https://example.com/server.ts
+    `);
+
+    exit(1);
+  }
+
   const { env: externalEnv, command } = parse(args);
 
   const ps = run({
