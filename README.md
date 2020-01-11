@@ -7,7 +7,7 @@
 ### Install
 
 ```shell
-deno install cross-env https://raw.githubusercontent.com/axetroy/deno_cross_env/master/mod.ts --allow-run --allow-env
+deno install cross-env https://deno.land/x/cross_env/mod.ts --allow-all
 ```
 
 ### Usage
