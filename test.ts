@@ -1,6 +1,9 @@
-import { assertEquals } from "https://deno.land/std@v0.29.0/testing/asserts.ts";
-import { runIfMain, test } from "https://deno.land/std@v0.29.0/testing/mod.ts";
+import {
+  assertEquals
+} from "https://deno.land/std@v0.35.0/testing/asserts.ts";
 import { parse } from "./mod.ts";
+
+const { test } = Deno;
 
 test(async function testParse() {
   {
@@ -37,5 +40,3 @@ test(async function testParse() {
     assertEquals(command, ["deno", "run", "example.ts"]);
   }
 });
-
-runIfMain(import.meta);

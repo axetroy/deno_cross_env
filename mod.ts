@@ -15,7 +15,7 @@ interface Result {
 
 export function parse(args: string[]): Result {
   args = args.slice();
-  const env = {};
+  const env: { [key: string]: string } = {};
   const command = args.slice();
   for (const argv of args) {
     const matcher = argv.match(reg);
