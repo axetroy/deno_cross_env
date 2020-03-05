@@ -6,14 +6,14 @@
 
 ### Install
 
-```shell
-deno install cross-env https://deno.land/x/cross_env@v0.2.0/mod.ts --allow-run --allow-env
+```bash
+deno install -f --allow-run --allow-env cross-env https://deno.land/x/cross_env@v0.2.0/mod.ts
 ```
 
 ### Usage
 
 ```shell
-cross-env PORT=8080 HOST=0.0.0.0 deno https://example.com/server.ts
+cross-env PORT=8080 HOST=0.0.0.0 deno https://deno.land/std/http/file_server.ts
 ```
 
 ## License
