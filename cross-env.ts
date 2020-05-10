@@ -1,7 +1,7 @@
 #!/usr/bin/env -S deno --allow-run --allow-env
 const { run, env, exit } = Deno;
 
-const VERSION = "v0.1.0";
+const VERSION = "v0.3.0";
 
 const args = Deno.args.slice(1);
 const reg = /^(\S+)=(.*)?$/i;

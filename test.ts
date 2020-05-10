@@ -1,7 +1,7 @@
 import {
   assertEquals,
 } from "https://deno.land/std@v0.50.0/testing/asserts.ts";
-import { parse } from "./mod.ts";
+import { parse } from "./cross-env.ts";
 
 const { test } = Deno;
 
