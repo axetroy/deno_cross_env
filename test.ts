@@ -121,6 +121,6 @@ test({
     ps.stdout?.close();
     ps.close();
 
-    assertEquals(new TextDecoder().decode(output), "v0.3.0\n");
+    assertEquals(new TextDecoder().decode(output), "v0.4.0\n");
   },
 });
