@@ -3,7 +3,7 @@ const { run, env, exit } = Deno;
 
 const VERSION = "v0.3.0";
 
-const args = Deno.args.slice(1);
+const args = Deno.args;
 const reg = /^(\S+)=(.*)?$/i;
 
 interface Result {
@@ -41,6 +41,9 @@ Usage:
     cross-env --help
     cross-env [key=value] <COMMAND>
     cross-env PORT=8080 HOST=localhost deno run server.ts
+
+Source Code:
+    https://github.com/axetroy/deno_cross_env
       `);
 
   exit(1);
@@ -78,6 +81,11 @@ if (import.meta.main) {
   });
 
   const status = await ps.status();
+
+  ps.stdin?.close();
+  ps.stderr?.close();
+  ps.stdout?.close();
+  ps.close();
 
   exit(status.code);
 }
