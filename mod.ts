@@ -29,7 +29,7 @@ export function parse(args: string[]): Result {
   }
   return {
     env,
-    command
+    command,
   };
 }
 
@@ -70,11 +70,11 @@ if (import.meta.main) {
     stdout: "inherit",
     stderr: "inherit",
     stdin: "inherit",
-    args: command,
+    cmd: command,
     env: {
-      ...env(),
-      ...externalEnv
-    }
+      ...env.toObject(),
+      ...externalEnv,
+    },
   });
 
   const status = await ps.status();
