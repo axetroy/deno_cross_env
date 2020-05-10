@@ -34,8 +34,8 @@ export function parse(args: string[]): Result {
 }
 
 function printHelp() {
-  console.log(`
-cross-env - A tool for setting environment variables across platforms
+  console.log(
+    `cross-env - A tool for setting environment variables across platforms
 
 Usage:
     cross-env --help
@@ -44,7 +44,8 @@ Usage:
 
 Source Code:
     https://github.com/axetroy/deno_cross_env
-      `);
+`,
+  );
 
   exit(1);
 }
