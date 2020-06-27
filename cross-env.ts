@@ -83,9 +83,6 @@ if (import.meta.main) {
 
   const status = await ps.status();
 
-  ps.stdin?.close();
-  ps.stderr?.close();
-  ps.stdout?.close();
   ps.close();
 
   exit(status.code);

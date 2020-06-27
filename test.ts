@@ -1,6 +1,6 @@
 import {
   assertEquals,
-} from "https://deno.land/std@v0.50.0/testing/asserts.ts";
+} from "https://deno.land/std@v0.59.0/testing/asserts.ts";
 import { parse } from "./cross-env.ts";
 
 const { test, run, execPath, readAll } = Deno;
@@ -53,6 +53,7 @@ test({
         "run",
         "--allow-run",
         "--allow-env",
+        "--allow-read",
         "./cross-env.ts",
         "FOO=BAR",
         execPath(),
@@ -81,6 +82,7 @@ test({
         "run",
         "--allow-run",
         "--allow-env",
+        "--allow-read",
         "./cross-env.ts",
         "FOO=123",
         "BAR=321",
@@ -110,6 +112,7 @@ test({
         "run",
         "--allow-run",
         "--allow-env",
+        "--allow-read",
         "./cross-env.ts",
         "--version",
       ],
